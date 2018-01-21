@@ -1,0 +1,24 @@
+@model ATMSData.Models.Properiety
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Properiety</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProperietyType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProperietyType)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ProperietyID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

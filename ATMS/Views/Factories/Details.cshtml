@@ -1,0 +1,24 @@
+@model ATMSData.Models.Factory
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Factory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FactorType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FactorType)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.FactorID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

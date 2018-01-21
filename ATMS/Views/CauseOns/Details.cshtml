@@ -1,0 +1,36 @@
+@model ATMSData.Models.CauseOn
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CauseOn</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.VehicleCost)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.VehicleCost)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AccidentRecords)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AccidentRecords.AccidentRecordID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Vehicles)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Vehicles.VehicleID)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>

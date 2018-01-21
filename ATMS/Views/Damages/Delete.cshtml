@@ -1,0 +1,41 @@
+@model ATMSData.Models.Damage
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Damage</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <input type="hidden" asp-for="ProperietyID" />
+        <dt>
+            @Html.DisplayNameFor(model => model.ProperietyCost)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProperietyCost)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AccidentRecords)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AccidentRecords.AccidentRecordID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Properieties)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Properieties.ProperietyID)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </form>
+</div>

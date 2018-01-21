@@ -1,0 +1,12 @@
+﻿@model ATMS.Models.Accident.AccidentIndexListingModel
+<div>
+    <label>Accident Record ID</label>
+    @Html.TextBoxFor(m => m.AccidentRecordID)
+    <label>City</label>
+    @Html.TextBoxFor(m => m.City)
+    <label>SubCity</label>
+    @Html.TextBoxFor(m => m.SubCity)
+    <label>Descriptions</label>
+    @Html.TextAreaFor(m => m.Descriptions)
+    <input id="AddRecord" type="submit" value="Add Record" />
+</div>

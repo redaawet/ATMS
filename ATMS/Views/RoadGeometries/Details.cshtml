@@ -1,0 +1,114 @@
+@model ATMSData.Models.RoadGeometry
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>RoadGeometry</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Latitude)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Latitude)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Longutide)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Longutide)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AADT)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AADT)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ADT)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ADT)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SurfaceType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SurfaceType)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SpeedLimit)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SpeedLimit)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NoLine)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NoLine)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TrafficMovement)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TrafficMovement)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.JunctionType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.JunctionType)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.JunctionControl)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.JunctionControl)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RoadClassifaction)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RoadClassifaction)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RoadWidth)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RoadWidth)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CarriageWidth)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CarriageWidth)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ShoulderWidth)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ShoulderWidth)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HorizontalFeature)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HorizontalFeature)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.VerticalFeature)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.VerticalFeature)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.RoadName">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

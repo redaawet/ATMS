@@ -1,0 +1,28 @@
+﻿@model ATMS.Models.Accident.AccidentIndexModel
+<div id="assets">
+    <h3>Accident Record</h3>
+    <div id="AccidentTable">
+        <table class="table table-bordered" id="RecordIndexTable">
+            <thead>
+                <tr>
+                    <th>Accident Id</th>
+                    <th>City</th>
+                    <th>SubCity</th>
+                    <th>Descriptions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var accident in Model.Accident){ 
+                    <tr>
+                        <td class="">@accident.AccidentRecordID</td>
+                        <td class="">@accident.City</td>
+                        <td class="">@accident.SubCity</td>
+                        <td class="">@accident.Descriptions</td>
+
+                    </tr>
+
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,141 @@
+@model ATMSData.Models.RoadGeometry
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<form asp-action="Edit">
+    <div class="form-horizontal">
+        <h4>RoadGeometry</h4>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input type="hidden" asp-for="RoadName" />
+        <div class="form-group">
+            <label asp-for="Latitude" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Latitude" class="form-control" />
+                <span asp-validation-for="Latitude" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Longutide" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Longutide" class="form-control" />
+                <span asp-validation-for="Longutide" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="AADT" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="AADT" class="form-control" />
+                <span asp-validation-for="AADT" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="ADT" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="ADT" class="form-control" />
+                <span asp-validation-for="ADT" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="SurfaceType" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="SurfaceType" class="form-control" />
+                <span asp-validation-for="SurfaceType" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="SpeedLimit" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="SpeedLimit" class="form-control" />
+                <span asp-validation-for="SpeedLimit" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="NoLine" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="NoLine" class="form-control" />
+                <span asp-validation-for="NoLine" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="TrafficMovement" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="TrafficMovement" class="form-control" />
+                <span asp-validation-for="TrafficMovement" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="JunctionType" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="JunctionType" class="form-control" />
+                <span asp-validation-for="JunctionType" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="JunctionControl" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="JunctionControl" class="form-control" />
+                <span asp-validation-for="JunctionControl" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="RoadClassifaction" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="RoadClassifaction" class="form-control" />
+                <span asp-validation-for="RoadClassifaction" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="RoadWidth" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="RoadWidth" class="form-control" />
+                <span asp-validation-for="RoadWidth" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="CarriageWidth" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="CarriageWidth" class="form-control" />
+                <span asp-validation-for="CarriageWidth" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="ShoulderWidth" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="ShoulderWidth" class="form-control" />
+                <span asp-validation-for="ShoulderWidth" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="HorizontalFeature" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="HorizontalFeature" class="form-control" />
+                <span asp-validation-for="HorizontalFeature" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="VerticalFeature" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="VerticalFeature" class="form-control" />
+                <span asp-validation-for="VerticalFeature" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

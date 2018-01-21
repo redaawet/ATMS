@@ -1,0 +1,125 @@
+@model IEnumerable<ATMSData.Models.RoadGeometry>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Latitude)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Longutide)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AADT)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ADT)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SurfaceType)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SpeedLimit)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NoLine)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TrafficMovement)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.JunctionType)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.JunctionControl)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.RoadClassifaction)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.RoadWidth)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CarriageWidth)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ShoulderWidth)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.HorizontalFeature)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.VerticalFeature)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Latitude)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Longutide)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AADT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ADT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SurfaceType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SpeedLimit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NoLine)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TrafficMovement)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JunctionType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.JunctionControl)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RoadClassifaction)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RoadWidth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CarriageWidth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ShoulderWidth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HorizontalFeature)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VerticalFeature)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.RoadName">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.RoadName">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.RoadName">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
