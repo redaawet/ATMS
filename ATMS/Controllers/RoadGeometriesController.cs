@@ -25,7 +25,7 @@ namespace ATMS.Controllers
         }
 
         // GET: RoadGeometries/Details/5
-        public async Task<IActionResult> Details(string? id)
+        public async Task<IActionResult> Details(string id)
         {
             if (id == null)
             {
@@ -65,7 +65,7 @@ namespace ATMS.Controllers
         }
 
         // GET: RoadGeometries/Edit/5
-        public async Task<IActionResult> Edit(string? id)
+        public async Task<IActionResult> Edit(string id)
         {
             if (id == null)
             {
@@ -116,7 +116,7 @@ namespace ATMS.Controllers
         }
 
         // GET: RoadGeometries/Delete/5
-        public async Task<IActionResult> Delete(string? id)
+        public async Task<IActionResult> Delete(string id)
         {
             if (id == null)
             {
